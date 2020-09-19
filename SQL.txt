@@ -1,0 +1,8 @@
+create database RTODB;
+use RTODB;
+create table Accounts (Uid Varchar(20),Pswd varchar(20),HintQ varchar(500),
+HAns varchar(500));
+insert into Accounts values('Admin','Admin','What is Your pet name?','Tommy');
+create table TestQuestion(qno int,QDesc varchar(2000),optA varchar(200),optB varchar(200),optC varchar(200),optD varchar(200),Ans varchar(200));
+create table CandidateReg(rno varchar(20),fullname varchar(200),address varchar(2000),contno varchar(20),idproof varchar(2000),idproofno varchar(20),vehicaltype varchar(100),TestStatus varchar(200));
+create table TestResult(RegNo varchar(20),CandName varchar(50),DOT varchar(20),TotQ int, TotW int,TotR int,Score int,Result varchar(20));
